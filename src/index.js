@@ -15,6 +15,8 @@ const createWindow = () => {
       devTools: false
     }
   });
+  
+  mainWindow.setMenuBarVisibility(false);
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
